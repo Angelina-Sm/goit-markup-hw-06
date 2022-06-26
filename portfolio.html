@@ -173,7 +173,6 @@
         </section>
         
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-address">
@@ -222,11 +221,33 @@
                     </ul>  
 
                 </div> 
+                <div class="footer-notifications">
+                    <p class="notifications-title">
+                        Подпишитесь на рассылку
+                    </p>
+                    <form class="notifications-form" action="/">
+                        <input type="email" 
+                        class="notifications-input"
+                        placeholder="E-mail"
+                        name="user-mail"
+                        required
+                        
+                        >
+                        <button type="submit" class="notifications-btn">Подписаться
+                            <svg class="notifications-icon" width="24" height="24">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-icon-send-telegram"></use>
+                            </svg>
+                        </button>
+                       
+                    </form>
+                </div>
                    
             </div>
             
         </div>
     </footer>
+
+
 
 </body>
 </html>
