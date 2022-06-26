@@ -398,7 +398,7 @@
                         required
                         
                         >
-                        <button type="submit" class="notifications-btn main-title-btn">Подписаться
+                        <button type="submit" class="notifications-btn">Подписаться
                             <svg class="notifications-icon" width="24" height="24">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-icon-send-telegram"></use>
                             </svg>
@@ -420,45 +420,83 @@
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="/" class="modal-form">
-                <label class="modal-label"
-                    >Имя
-                    <input type="text"
-                    class="modal-input"
-                    name="user-name"
-                    required
-                    >
-                </label>
-                <label class="modal-label"
-                    >Телефон
-                    <input type="tel"
-                    class="modal-input"
-                    name="user-tel"
-                    required
-                    >
-                </label>
-                <label class="modal-label"
-                    >Почта
-                    <input type="email"
-                    class="modal-input"
-                    name="user-mail"
-                    required
-                    >
-                </label>
-                <label class="modal-label"
-                    >Комментарий
-                    <input type="text"
-                    class="modal-input-comment"
-                    name="user-comment"
+                <div class="modal-block">
+                    <label class="modal-label"
+                        >Имя
+                        <span class="input-wrap">
+                            <input type="text"
+                            class="modal-input"
+                            name="user-name"
+                            required
+                            >
+                            <svg class="modal-input-icon" width="12" height="12">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-modal-name"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-block">
+                    <label class="modal-label"
+                        >Телефон
+                        <span class="input-wrap">
+                            <input type="tel"
+                            class="modal-input"
+                            name="user-tel"
+                            required
+                            >
+                            <svg class="modal-input-icon" width="13" height="13">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-modal-tel"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-block">
+                    <label class="modal-label"
+                        >Почта
+                        <span class="input-wrap">
+                            <input type="email"
+                            class="modal-input"
+                            name="user-mail"
+                            required
+                            >
+                            <svg class="modal-input-icon" width="15" height="12">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-modal-mail"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-comment">
+                    <label class="comment-label" for="comment-text"
+                        >Комментарий
+                    
+                    </label>
+                    <textarea name="comment-text" 
+                    id="comment-text" 
+                    class="comment-text"
                     placeholder="Введите текст"
-                    required
-                    >
-                </label>
-                <label class="modal-checkbox">
+                    ></textarea>
+                </div>
+                <div class="checkbox-privasy">
                     <input type="checkbox"
-                    class="input-checkbox"
+                        class="input-checkbox visually-hidden"
+                        name="privasy"
+                        id="privasy"
+                        
                     >
-                    Соглашаюсь с рассылкой и принимаю<a href="" class="modal-link">Условия договора</a> 
-                </label>
+                    <label class="checkbox-text" for="privasy">
+                        <span>
+                            <svg class="icon-checkbox" width="11" height="8">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                            
+                        Соглашаюсь с рассылкой и принимаю &nbsp<a href="" class="modal-link">Условия договора</a> 
+                    </label>
+                    
+                </div>
+                <button type="submit" class="modal-btn">
+                    Отправить
+                </button>
                
             </form>
         </div>
