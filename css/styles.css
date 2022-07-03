@@ -18,6 +18,7 @@
     --modal-tex:#757575;
     --modal-icon-color: #212121;
     --icon-hover: #FFFFFF;
+    --input-btn-hover:#188CE8;;
 }
 
 body {
@@ -211,7 +212,7 @@ img {
 .header-link-tel:focus {
     color: var(--akcent-color);
 }
-/*------------main------------*/
+/*------------title-section------------*/
 
 .main-title-section {
     margin-left: auto;
@@ -702,6 +703,7 @@ img {
 
 .footer-notifications {
     margin-left: 93px;
+    
 }
 
 .notifications-title {
@@ -725,6 +727,13 @@ img {
     color: var(--title-color);
     margin-right: 12px;
     outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.notifications-input:hover,
+.notifications-input:focus {
+    border:  1px solid var(--akcent-color);
+
 }
 
 .notifications-input::placeholder {
@@ -757,6 +766,12 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.notifications-btn:hover,
+.notifications-btn:focus {
+    background-color: var(--input-btn-hover);
 }
 
 .notifications-icon {
@@ -990,10 +1005,13 @@ border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     cursor: pointer;
 }
 
+.button-modal-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-close-btn:hover .button-modal-icon {
     fill: var(--akcent-color);
 }
@@ -1055,7 +1073,7 @@ border-radius: 4px;
 
 .modal-input:hover,
 .modal-input:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--akcent-color);
 
 }
 
@@ -1065,6 +1083,9 @@ border-radius: 4px;
 
 .modal-input:focus +.modal-input-icon {
     fill: var(--akcent-color);
+}
+.modal-comment {
+    margin-bottom: 17px;
 }
 
 .comment-label {
@@ -1084,7 +1105,6 @@ border-radius: 4px;
     border-radius: 4px;
     margin-top: 4px;
     resize: none;
-    margin-bottom: 17px;
     padding: 12px 16px;
     outline: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1092,7 +1112,7 @@ border-radius: 4px;
 
 .comment-text:hover,
 .comment-text:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--akcent-color);
 }
 
 .comment-text::placeholder {
